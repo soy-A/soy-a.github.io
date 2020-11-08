@@ -1,1 +1,1 @@
-[soy-A.github.io](http://soy-A.github.io)
+[soy-a.github.io](http://soy-a.github.io)
