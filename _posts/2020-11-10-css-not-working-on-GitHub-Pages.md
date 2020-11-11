@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GitHub 블로그에 css 적용이 안될 때
+comments: true
 ---
 
 GitHub블로그를 만들기 위해 로컬 컴퓨터에서 jekyll 서버를 돌렸을 때에는 테마 적용이 예쁘게 되었다.
