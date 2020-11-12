@@ -35,18 +35,21 @@
  */
 
 /* Prevent scroll on narrow devices */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap');
+
 html,
 body {
   overflow-x: hidden;
 }
 
 html {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: "PT Serif", 'Noto Sans KR';
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: "PT Sans", 'Noto Sans KR';
+  font-weight: 700;
   color: #313131;
   letter-spacing: -.025rem;
 }
@@ -148,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "PT Sans", 'Nanum Gothic';
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
   background-color: #202020;
@@ -312,6 +315,7 @@ a.sidebar-nav-item:focus {
 .post-title,
 .post-title a {
   color: #303030;
+  font-weight: 700;
 }
 .page-title,
 .post-title {
@@ -363,7 +367,7 @@ a.sidebar-nav-item:focus {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "PT Sans", 'Noto Sans KR';
   color: #ccc;
   text-align: center;
 }
