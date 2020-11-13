@@ -2,6 +2,10 @@
 layout: post
 title: GitHub 블로그에 테마 적용하기
 comments: true
+tags:
+- Jekyll
+- 블로그
+- GitHub
 ---
 
 예전 학교 수업에서, GitHub를 사용하는 법을 배우며 GitHub Pages를 사용하는 법도 배웠었다. 그때에는 Jekyll를 설치하지 않고 바로 내 repository에 가져와 사용했었는데, 이번 기회에 Jekyll을 설치해 내 GitHub 블로그를 관리해보기로 했다.
