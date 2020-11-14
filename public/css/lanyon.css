@@ -18,13 +18,15 @@
  * Contents
  *
  * Global resets
+ * Fonts
  * Masthead
  * Sidebar
  * Slide effect
  * Posts and pages
  * Pagination
  * Reverse layout
- * Themes
+ * Theme
+ * Tagss
  */
 
 
@@ -36,21 +38,35 @@
 
 /* Prevent scroll on narrow devices */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap');
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  unicode-range: U+0020-007E;
+  font-style: normal;
+}
 
 html,
 body {
   overflow-x: hidden;
+  font-weight: 100;
 }
 
 html {
-  font-family: "PT Serif", 'Noto Sans KR';
+  font-family: "Open Sans", 'Noto Sans KR';
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", 'Noto Sans KR';
-  font-weight: 700;
+  font-family: "Open Sans", 'Noto Sans KR';
   color: #313131;
+  font-weight: 500, 600;
   letter-spacing: -.025rem;
 }
 
@@ -106,6 +122,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
   color: #505050;
+  font-weight: 600;
 }
 .masthead-title a {
   color: #505050;
@@ -151,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  font-family: "PT Sans", 'Nanum Gothic';
+  font-family: 'Open Sans', 'Noto Sans KR';
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
   background-color: #202020;
@@ -315,7 +332,7 @@ a.sidebar-nav-item:focus {
 .post-title,
 .post-title a {
   color: #303030;
-  font-weight: 700;
+  font-weight: 600;
 }
 .page-title,
 .post-title {
@@ -367,7 +384,7 @@ a.sidebar-nav-item:focus {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", 'Noto Sans KR';
+  font-family: "Open Sans", 'Noto Sans KR';
   color: #ccc;
   text-align: center;
 }
