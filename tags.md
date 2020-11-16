@@ -6,7 +6,7 @@ title: Tags
 
 <ul class="tag-cloud">
 {% for tag in site.tags %}
-  <span style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
+  <span style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%; font-weight: 400">
     <a href="#{{ tag | first | slugize }}">
       {{ tag | first }}
     </a> &nbsp;&nbsp;
@@ -22,7 +22,7 @@ title: Tags
     <a name="{{ tag_name | slugize }}"></a>
     {% for post in site.tags[tag_name] %}
     <article class="archive-item">
-      <h4><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h4>
+      <h4><a href="{{ root_url }}{{ post.url }}" style="font-weight: 100">{{post.title}}</a></h4>
     </article>
     {% endfor %}
   </div>
