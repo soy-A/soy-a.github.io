@@ -15,7 +15,10 @@ tags:
 
 이 포스팅에서는 내가 Jekyll을 사용해 블로그 테마를 적용하며 마주쳤던 오류들을 다뤄보고자 한다.
 
+<br/>
+
 -------
+<br/>
 
 ## Jekyll 설치하기<br/>
 Jekyll을 설치하는 과정부터 쉽지 않았다.
@@ -48,11 +51,15 @@ vi 에디터로 파일을 열어서 eval "$(rbenv init -)"를 적어주면 된�
 
 터미널을 재실행 하는 건 번거로우니 source명령어로 마무리해주었다.
 
+<br/>
 드디어 문제없이 Jekyll설치가 가능해졌다.
 
 하지만 곧 또다른 문제를 만나게 되었으니...
 
+<br/>
+
 ------
+<br/>
 
 ## Jekyll 테마 적용
 
@@ -64,12 +71,14 @@ lanyon의 repository를 clone하여 내 로컬로 옮겨오고, Jekyll을 실행
 
 >Dependency Error: Yikes! It looks like you don't have jekyll-paginate or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'cannot load such file -- jekyll-paginate' If you run into trouble, you can find helpful resources at http://jekyllrb.com/help/!
 
+<br/>
 jekyll-paginate가 설치되지 않아 발생한 문제인가 싶어
 ```bash
 $gem install jekyll-paginate
 ```
 명령어를 이용하여 설치해보았으나, 같은 오류가 반복되었다.
 
+<br/>
 결국 Gemfile을 수정하는 방법으로 이 문제를 해결할 수 있었는데, Gemfile을 열어 gem "jekyll-paginate", "~> 1.1.0"을 추가 해주니 잘 실행되었다.
 
 사실 잘 실행되었다고 적었지만, 한 가지의 문제가 더 발생하고있었다. 
@@ -77,11 +86,13 @@ $gem install jekyll-paginate
 실행은 되지만 Build Warning 메시지가 뜨며 새하얀 화면만이 뜨는 문제였다.
 >Build Warning: Layout 'home' requested in index.markdown does not exist.
 
+<br/>
 적혀있는대로 index.markdown 파일에 layout으로 설정되어있는 home이 존재하지 않아서 발생하는 오류이다. 
 
 우리가 가지고있는 layout의 이름은 Home이므로 index.markdown의 내용을 다음과 같이 수정해주면 된다.
 >---\nlayout: default\ntitle: Home\n---
 
+<br/>
 이로써 테마적용을 완벽히 끝낼 수 있었다. 
 
 생각보다 다양한 오류들이 발생했지만, 모든 오류에는 원인이 있는 법이다. 
