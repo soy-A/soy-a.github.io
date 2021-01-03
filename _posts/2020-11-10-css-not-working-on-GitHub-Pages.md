@@ -1,6 +1,7 @@
 ---
 layout: post
-title: GitHub 블로그에 css 적용이 안될 때
+title: "GitHub 블로그에 css 적용이 안될 때"
+author: "Soy-A"
 comments: true
 tags:
 - Jekyll

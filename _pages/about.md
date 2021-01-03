@@ -1,10 +1,11 @@
 ---
-layout: page
-title: About
+layout: post
+title: "About"
+author: "Soy-A"
+permalink: /about/
 ---
 
 <br/>
-이것저것 공부해보고 있는 학생입니다.
 
 공부한 내용을 이 블로그에 업로드해보려 합니다.
 

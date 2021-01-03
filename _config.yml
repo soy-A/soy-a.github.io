@@ -1,11 +1,11 @@
 # Setup
 title:               Soy-A's WILT
-tagline:             'What I Learned Today'
-description:         '오늘 배운 것들을 기록합니다'
+description:         'What I Learned Today'
 url:                 https://soy-a.github.io
 baseurl:             ''
-paginate:            5
-permalink:           pretty
+
+# Google Analytics
+google_analytics: UA-XXXXXXXX-X
 
 # About/contact
 author:
@@ -13,14 +13,28 @@ author:
   url:               https://github.com/soy-A
   email:             soyeonminn@gmail.com
 
+# Build settings
+markdown:            kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:          _sass
+  style:             compressed
+
 # Gems
 plugins:
+  - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
 
-# Custom vars
-version:             1.1.0
-google_analytics_id: #UA-XXXX-Y
+# Permalinks
+permalink:           /:year-:month-:day/:title
+paginate:            5
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
 
 # Disqus settings
-disqus:
-  shortname: https-soy-a-github-io
+disqus:              https-soy-a-github-io

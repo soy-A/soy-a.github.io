@@ -1,6 +1,7 @@
 ---
 layout: post
-title: VirtualBox에 Ubuntu설치 시 종료되는 문제 해결(mac)
+title: "VirtualBox에 Ubuntu설치 시 종료되는 문제 해결(mac)"
+author: "Soy-A"
 comments: true
 tags:
 - VirtualBox

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: GitHub 블로그에 테마 적용하기
+title: "GitHub 블로그에 테마 적용하기"
+author: "Soy-A"
 comments: true
 tags:
 - Jekyll
