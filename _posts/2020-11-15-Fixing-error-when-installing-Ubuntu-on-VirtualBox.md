@@ -4,8 +4,7 @@ title: "VirtualBox에 Ubuntu설치 시 종료되는 문제 해결(mac)"
 author: "Soy-A"
 comments: true
 tags:
-- VirtualBox
-- Ubuntu
+- etcetera
 ---
 
 버츄얼박스에 우분투를 설치하는 방법은 여러 블로그들에 많이 올라와있다.
