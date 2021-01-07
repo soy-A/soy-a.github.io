@@ -14,7 +14,7 @@ tags:
 ### 알파벳
 
 - **알파벳** Σ(시그마)은 유한하고, 공백이 아닌 심볼들의 집합을 말한다
-> ex) 이진수: Σ = {0, 1}<br/>
+> e.g. 이진수: Σ = {0, 1}<br/>
 모든 소문자(영어): Σ = {a, b, c, ..., z}
 
 ---
@@ -26,7 +26,7 @@ tags:
 Σ = {a, b, c} -> 문자열: a, ab, ccba, ...
 - 문자열의 길이: \|s\| (s은 문자열)
 - xy는 문자열 x와 y의 연쇄이다
-> ex) x = abcd, y efgh -> wy = abcdefgh
+> e.g. x = abcd, y efgh -> wy = abcdefgh
 - a^n = a...a (n개의 a가 연쇄)
 
 ---
@@ -55,7 +55,7 @@ L2 = {a^p | p는 소수} #무한한 언어<br/>
 
 ### 문법이란?
 - 적법한 문자열을 생성하도록 하는 **규칙에 따라 언어를 명세**한 것
-> ex) S -> dingdongA	# S는 dingdongA라는 문자열을 나타낸다<br/>
+> e.g. S -> dingdongA	# S는 dingdongA라는 문자열을 나타낸다<br/>
 A -> dengS | deng		# A는 dengS 또는 deng이라는 문자열을 나타낸다<br/>
 S -> dingdongA -> dingdongdeng<br/>
 S->dingdongA->dingdongdengS->dingdongdengdingdongA-> dingdongdengdingdongdeng<br/>
