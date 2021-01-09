@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[프로그래밍 언어론] 구문과 의미론"
+title: "[프로그래밍 언어론] 구문과 의미론 - 구문"
 author: "Soy-A"
 comments: true
 tags:
