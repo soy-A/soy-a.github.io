@@ -136,3 +136,7 @@ L = {(dingdongdeng)^n | n ≧ 1}
 - 인식 오토마타: 유한 상태 오토마타(Finite automata)
 
 각각의 오토마타는 주어진 문자열이 어떤 문법인지를 판단한다
+
+<br/><br/><br/>
+**참고 문헌**<br/>
+Concepts of Programming Languages, Robert W. Sebesta -10th ed.

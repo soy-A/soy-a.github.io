@@ -155,3 +155,7 @@ tags:
 - 컴파일러와 순수 인터프리터 간의 절충
 - high-level 언어 프로그램을 용이한 해석이 가능하도록 설계된 중간 언어로 번역한다
 - 순수 인터프리터보다 빠르다
+
+<br/><br/><br/>
+**참고 문헌**<br/>
+Concepts of Programming Languages, Robert W. Sebesta -10th ed.

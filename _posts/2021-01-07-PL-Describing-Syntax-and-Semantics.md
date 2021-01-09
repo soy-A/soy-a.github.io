@@ -165,3 +165,7 @@ BNF:  \<term\> -> \<term\> + const<br/>
 - 각 문법 기호 X에 속성들의 집합 A(X)가 연관된다
 - 각 문법 규칙은 non-terminal의 특정 속성을 정의하는 함수의 집합을 갖는다
 - 각 문법 규칙은 기호들의 속성에 대한 술어 함수(공집합일 수 있다)들의 집합을 갖는다
+
+<br/><br/><br/>
+**참고 문헌**<br/>
+Concepts of Programming Languages, Robert W. Sebesta -10th ed.
