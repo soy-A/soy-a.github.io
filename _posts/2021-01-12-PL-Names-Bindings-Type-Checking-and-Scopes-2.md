@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[프로그래밍 언어론] 이름(name), 바인딩(binding)"
+title: "[프로그래밍 언어론] 영역(scope)"
 author: "Soy-A"
 comments: true
 tags:
