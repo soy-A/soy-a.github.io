@@ -43,6 +43,9 @@ tags:
 - 대체로 하드웨어와 같지만 항상은 아님
 - 부동-소수점 수 타입으로 표현될 수 있는 값들의 집합은 정밀도(precision)와 범위(range)의 관점에서 정의됨
 
+#### 복소수(complex)
+
+to be continued...
 
 
 <br/><br/><br/>
