@@ -82,13 +82,34 @@ printf("%.10f", a+b);
 >- 16-bit Unicode: 대부분의 자연 언어에 속한 문자들을 포함(2byte)
 - 단일 문자들의 코딩 처리하는 수단 제공하기 위해, 대부분의 프로그래밍 언어는 문자들을 위한 기본 타입 포함함
 
-#### Unicode 와 UTF
+#### Unicode
 
-to be continued...
+- 전 세계의 모든 문자를 컴퓨터에서 일관되게 표현하고 다룰 수 있도록 설계된 산업 표준
+- 표현: U+hexadecimal
+> e.g. 가 -> U+AC00
+- unicode는 무조건 2byte로 표현되는 것 아님
+- 기본적인 내용만 2byte에, 추가적인 것들은 나머지 2byte에 표현(총 4byte)
+
+#### UTF(Unicode Transfer Format)
+
+- UTF-16
+  - **가변길이 인코딩**
+  - 아스키랑 1:1 맵핑X
+  - BMP(Basic multilingual plane)- 2bytes, otherwise-4bytes로 표현
+  - BMP에 속하면 2 byte로 표현하며, big endian인지 little endian인지에 따라 다르게 해석됨
+  - 따라서 구분을 위해 BOM(byte order mark) 넣어줌
+- UTF-32
+  - **고정길이 인코딩**
+  - 모든 문자 4byte로 표현
+  - 직접 인덱싱되나, 공간 효율이 떨어진다
+- UTF-8
+  - **가변길이 인코딩**(1-4byte)
+  - **ASCII와 호환**됨(U+007F까지의 문자는 7비트 아스키 문자와 동일한 방법으로 표시됨, 첫비트는 0)
 
 
 
 
 <br/><br/><br/>
 **참고 문헌**<br/>
-Concepts of Programming Languages, Robert W. Sebesta -10th ed.
+Concepts of Programming Languages, Robert W. Sebesta -10th ed.<br/>
+위키백과, https://ko.wikipedia.org/wiki/%EC%9C%A0%EB%8B%88%EC%BD%94%EB%93%9C
