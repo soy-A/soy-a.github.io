@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[프로그래밍 언어론] 데이터 타입"
+title: "[프로그래밍 언어론] 데이터 타입(1)"
 author: "Soy-A"
 comments: true
 tags:
