@@ -118,15 +118,25 @@ printf("%.10f", a+b);
 #### C와 C++
 
 - 스트링이 기본 타입으로 정의되지 않음
->  char *str = "apple";
+>  char *str = "apple";<br/>
+
+  > in **python**<br/>
+a = "abcd" <br/>
+b = "bcde"<br/>
+a>b 또는 a==b와같은 비교가 가능하다(primitive type이므로)<br/>
+
+  > in **C**<br/>
+char배열 비교는 strcmp를 이용한다
 - char 배열을 이용해 문자 스트링 저장
 - 표준 라이브러리를 통해 스트링 연산들의 모음 제공
 
 #### Java
 
 - String 클래스 (char의 배열 아님)
-- Objects는 변경 불가(immutable)
+- Objects는 한 번 생성시 불변(immutable)
+> 같은 이름에 다른 객체를 할당하더라도 기존 객체는 그대로 남아있다
 - StringBuffer/StringBuilder 클래스의 값은 변경 가능
+> for문으로 계속해서 문자를 덧붙이는 작업같은 경우 그냥 String을 이용하는 것보다 더 빠르다(새로운 객체 생성x)
 
 ## 스트링 길이 선택 사항
 
