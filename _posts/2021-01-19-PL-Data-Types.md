@@ -144,6 +144,25 @@ char배열 비교는 strcmp를 이용한다
 
 ## 스트링 길이 선택 사항
 
+#### 정적 길이 스트링(static length string)
+
+- 길이 고정
+- FORTRAN 77, Ada, COBOL
+- 길이는 정적이고, 스트링이 생성될 때 설정됨
+
+#### 제한된 동적 길이 스트링(limited dynamic length strings)
+
+- C, C++
+- 스트링이 그 변수 정의에서 선언되고 고정된 최대 길이까지의 가변적인 길이를 갖는 것을 허용함
+> char str[100] = "Hello";	// 길이가 5로 바뀐다
+
+#### 동적 길이 스트링(dynamic length strings)
+
+- SNOBOL4, Perl, JavaScript, ...
+- 스트링이 최대 길이의 제한 없이 가변 길이를 갖는 것을 허용
+
+## 문자 스트링 타입의 구현
+
 - to be continued...
 
 
