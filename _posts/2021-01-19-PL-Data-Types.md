@@ -190,6 +190,11 @@ char배열 비교는 strcmp를 이용한다
 > in C#<br/>
 **enum** days {Mon, Tue, Wed, Thu, Fri, Sat, Sun}
 
+- C,C++의 enum: 정수랑 매핑시킴, 임의로 정수 매핑도 가능(C++은 캐스팅 필요)
+- Java, Python의 enum: 정수 매핑 불가
+
+## 배열(array) 타입
+
 to be continued...
 
 
