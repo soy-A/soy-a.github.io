@@ -200,6 +200,21 @@ char배열 비교는 strcmp를 이용한다
 
 #### 배열과 색인(indexes)
 
+- 배열의 특정 원소들은 두 개 수준의 구문 매커니즘에 의해서 참조됨
+  - 집단체 이름
+  - 첨자(subscript), 색인(index)이라고 알려진 동적 가능 선택자(dynamic selector)
+- 선택 연산은 배열 이름과 첨자 값들의 집합으로부터 집단체의 한 원소로의 사상(mapping)으로 생각될 수 있음
+  - array = 유한 사상(finite mappings)
+  - array_name(index_value_list) -> element
+- 배열 참조의 구문은 매우 보편적임
+  - Ada, Fortran은 소괄호 사용
+  - 대부분의 언어는 대괄호 사용
+- 첨자들의 타입
+  - FORTRAN, C, Java...: 정수만
+  - Pascal, Ada: 임의의 순서 타입 사용 허용(boolean, char, enum...)
+
+#### 첨자 바인딩과 배열 유형
+
 to be continued...
 
 
