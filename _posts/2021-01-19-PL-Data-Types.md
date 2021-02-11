@@ -213,7 +213,12 @@ char배열 비교는 strcmp를 이용한다
   - FORTRAN, C, Java...: 정수만
   - Pascal, Ada: 임의의 순서 타입 사용 허용(boolean, char, enum...)
 
-#### 첨자 바인딩과 배열 유형
+#### 첨자 바인딩
+
+- 배열 변수에 대한 첨자 타입의 바인딩은 보통 정적, but 그 첨자 값 범위는 때때로 동적으로 바인딩됨
+- 어떤 언어(C, Fortran)에서, 첨자 범위의 하한(lower bound)은 묵시적임
+
+#### 배열 유형
 
 to be continued...
 
