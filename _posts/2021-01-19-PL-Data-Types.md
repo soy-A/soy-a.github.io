@@ -233,6 +233,17 @@ char배열 비교는 strcmp를 이용한다
 > e.g. int a[10]; // compile time에 스택에 위치 잡음. but 값은 run-time에 할당
 - 장점: 기억공간의 효율성
 
+#### 고정 힙-동적 배열(fixed heap-dynamic array)
+- 첨자 범위와 기억공간의 바인딩이 기억공간이 할당된 후에 고정됨
+> e.g. new int[n]; // n=10;하는 순간 힙에 10개 fixed 됨
+- 장점: 유연성
+
+#### 힙-동적 배열(heap-dynamic array)
+- 첨자 범위의 바인딩과 기억공간의 할당이 동적이며, 배열의 존속기간 동안에 변경할 수 있는 배열
+- 힙에서 늘어났다 줄어들었다 함
+> in Java: 모든 배열은 고정 힙-동적 배열<br/>
+in Perl, JavaScript: 배열은 필요에 따라 늘었다 줄었다 함
+
 
 
 
