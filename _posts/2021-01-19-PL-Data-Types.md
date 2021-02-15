@@ -244,6 +244,10 @@ char배열 비교는 strcmp를 이용한다
 > in Java: 모든 배열은 고정 힙-동적 배열<br/>
 in Perl, JavaScript: 배열은 필요에 따라 늘었다 줄었다 함
 
+### 배열 초기화
+
+to be continued...
+
 
 
 
