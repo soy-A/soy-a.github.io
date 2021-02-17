@@ -256,6 +256,57 @@ A = [1,2,3]<br/>
 A == [1,2,3] // T(값이 같은지를 비교)<br/>
 A is [1,2,3] // F(같은 object인지를 비교)
 
+### 직사각형 배열과 톱니형 배열
+
+#### 직사각형(rectangular) 배열
+
+- 모든 **행**들이 **동일 개수의 원소**들을 포함하고, 모든 **열**들이 **동일 개수의 원소**들을 포함하는 **다차원 배열**
+- 직사각형 표라고 생각하면 됨
+
+#### 톱니형(jagged) 배열
+
+- 행들의 크기가 동일할 필요가 없는 다차원 배열(**가변**)
+- 행, 열 길이 각각 지정 가능
+
+>- **C, C++, C#, Java**<br/>
+  - jagged array 지원
+  - 원소 참조: myArray[3][7]
+- **Fortran, Ada, C#**<br/>
+  - rectangular array 지원
+  - 원소 참조: myArray[3, 7]
+
+### 배열 타입의 구현
+
+- 배열 원소의 접근을 허용하는 코드는 compile-time에 생성되어야 함
+- run-time에, 코드가 원소의 주소를 생성하도록 실행되어야 함
+
+#### 1차원 배열
+
+- 인접한 메모리 셀들의 리스트
+- address(list[k]) = address(list[lower_bound]) + ((k - lower_bound) * element_size)
+> e.g. a: int, int: 4byte<br/>
+a[0]의 주소가 0x10일 때, a[3]의 주소?<br/>
+4*3 = C -> **0x1C**
+
+#### 다차원 배열
+
+- 하드웨어 메모리는 선형적임
+- 다차원 배열을 1차원 메모리로 사상시켜야 함
+  - **행-우선 순서(row major order)**
+  > 3  4  7<br/>
+  6  2  5<br/>
+  1  3  8<br/>
+  -> 3, 4, 7, 6, 2, 5, 1, 3, 8의 순서로 저장됨
+  - **열-우선 순서(column major order)**
+  >-> 3, 6, 1, 4, 2, 3, 7, 5, 8의 순서로 저장됨
+  
+>e.g. supscript range lower bound = 0<br/>
+다차원 배열 a는 row major order를 따름, int type<br/>
+lower bound의 주소는 0x00010<br/>
+a[2,3]의 주소는? -> 0x00038<br/><br/>
+![스크린샷 2021-02-17 오후 11 41 35](https://user-images.githubusercontent.com/63772786/108220058-ad746500-7179-11eb-920f-7fabea3c320c.png)![스크린샷 2021-02-17 오후 11 41 48](https://user-images.githubusercontent.com/63772786/108220092-b6653680-7179-11eb-9686-431d94b93cbb.png)
+
+
 
 
 
