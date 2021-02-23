@@ -22,6 +22,15 @@ tags:
 
 ## 레코드 필드의 참조
 
+- **완전 자격 참조**(fully qualifed reference)는 가장 큰 포괄적인 레코드부터 특정 필드에 이르기까지 모든 중간 레코드 이름들이 그 참조에 포함된다
+> 대부분 도트 표기법(dot notation) 이용
+- **생략 참조**(elliptical reference)는 참조가 **모호하지 않은 경우**에 한해 레코드 이름을 생략하는 것을 허용
+> in COBOL
+>- **full qualified reference**: Middle OF EMPLOYEE-NAME OF EMPLOYEE-RECORD
+>- **elliptical reference**: FIRST/ FIRST OF EMPLOYEE-NAME / FIRST OF EMPLOYEE-RECORD
+
+## 레코드 필드의 연산, 평가
+
 - to be continued...
 
 
