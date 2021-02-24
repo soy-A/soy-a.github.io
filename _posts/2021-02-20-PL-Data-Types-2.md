@@ -19,6 +19,7 @@ tags:
 - 레코드의 원소, 즉 필드들(fields)이 색인으로 참조되지 않는다
 - 필드들은 식별자로 명칭되며, 필드에 대한 참조는 식별자를 사용
 - 어떤 언어에서의 레코드는 공용체(union)를 포함하는 것이 허용됨
+- 배열의 원소에 접근하는 것이 레코드 필드에 접근하는 것보다 훨씬 느림(필드 이름은 정적)
 
 ## 레코드 필드의 참조
 
@@ -29,9 +30,15 @@ tags:
 >- **full qualified reference**: Middle OF EMPLOYEE-NAME OF EMPLOYEE-RECORD
 >- **elliptical reference**: FIRST/ FIRST OF EMPLOYEE-NAME / FIRST OF EMPLOYEE-RECORD
 
-## 레코드 필드의 연산, 평가
+## 레코드 필드의 구현
 
-- to be continued...
+- 레코드 필드들은 인접된 메모리 위치들에 저장됨
+- 오프셋 주소: 레코드의 시작 주소에 상대적이며, 필드 접근들은 모두 이러한 오프셋을 사용하여 처리됨
+- 오프셋을 가지면 메모리가 어디에 배정되든 쉽게 찾을 수 있다
+
+# 공용체(union) 타입
+
+to be continued...
 
 
 
