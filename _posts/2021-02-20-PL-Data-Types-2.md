@@ -38,6 +38,25 @@ tags:
 
 # 공용체(union) 타입
 
+- 그 변수가 프로그램 실행 중 다른 시기에 다른 타입의 값을 저장할 수 있는 타입
+- struct는 갖고있는 타입별로 자리가 할당되지만, union은 갖고있는 타입 중 가장 큰 타입만큼만 할당됨
+
+## 판별(discriminated) 공용체와 자유(free) 공용체
+
+### 자유 공용체
+
+- Fortran(equivalence), C, C++(union)
+- 프로그래머는 그 사용에 있어서 타입 검사로부터 완전한 자유가 허용됨
+- 한마디로 type checking 안함
+
+### 판별 공용체
+
+- ALGOL 68, Ada
+- 각 공용체 구조가 타입 지시자를 포함함
+- type checking 함
+
+# 리스트(list) 타입
+
 to be continued...
 
 
