@@ -62,7 +62,11 @@ tags:
 - Python의 리스트는 배열로서도 역할함
   - 변경 가능함(mutable)
   - 어떤 데이터 값이나 객체도 포함 가능
-> e.g. myList = 
+> e.g. myList = [3, 5, 8, 'apple']
+
+# 튜플(tuple) 타입
+
+to be continued...
 
 
 
