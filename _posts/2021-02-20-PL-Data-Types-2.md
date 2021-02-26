@@ -57,7 +57,12 @@ tags:
 
 # 리스트(list) 타입
 
-to be continued...
+- Scheme과 Common LISP의 리스트는 괄호로 구분되고, 원소들은 어떤 구분자도 구분되지 않음
+> e.g. (A B C D)
+- Python의 리스트는 배열로서도 역할함
+  - 변경 가능함(mutable)
+  - 어떤 데이터 값이나 객체도 포함 가능
+> e.g. myList = 
 
 
 
