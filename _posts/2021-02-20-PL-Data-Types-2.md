@@ -66,7 +66,13 @@ tags:
 
 # 튜플(tuple) 타입
 
-to be continued...
+- 튜플은 **원소들이 명명되지 않는다**는 것을 제외하면 레코드와 유사함
+- 변경 불가(immutable)
+- 튜플이 변경될 필요가 있으면 list 함수를 사용해 배열로 변환할 수 있다(python)
+> in python<br/>
+myTuple = (3, 5.8, 'apple')<br/>
+print(myTuple[1]) -> 5.8<br/>
+myTuple[1] = 10 -> X
 
 
 
