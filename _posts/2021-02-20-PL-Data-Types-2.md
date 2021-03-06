@@ -123,7 +123,17 @@ myTuple[1] = 10 -> X
 **void \*** 포인터는 왜 필요한가?<br/>
 >- type을 명확히 알 수 없는 경우 필요
 
-to be continued...
+## 참조(reference) 타입
+
+- 포인터는 메모리의 주소를 참조
+- but 참조 변수는 메모리의 객체나 값을 참조
+- C++ 참조 타입 변수는 항상 묵시적으로 역참조되는 상수(constant) 포인터임
+- 따라서 어떤 변수의 주소 값으로 초기화 되어야 하고, 초기화 후에는 다른 변수를 참조하도록 설정될 수 없음
+- 한마디로, 포인터는 역참조 따로 해줘야 하지만(* 이용, 그 포인터 변수가 딴 걸 가리키고 있을 수도 있으므로) 참조 타입은 알아서 됨(표시 안해도 ok).
+>int result = 0;<br/>
+int &ref_result = result;	// -> result와 ref_result는 aliases임(표시 안해도)<br/>
+...<br/>
+ref_result = 100;	// result == 100, 만약 &없었다면 0, 여기서 ref_result는 항상 dereference하는 상태
 
 
 
