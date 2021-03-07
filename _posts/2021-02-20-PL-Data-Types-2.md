@@ -135,6 +135,19 @@ int &ref_result = result;	// -> result와 ref_result는 aliases임(표시 안해
 ...<br/>
 ref_result = 100;	// result == 100, 만약 &없었다면 0, 여기서 ref_result는 항상 dereference하는 상태
 
+### Java
+
+- Only 참조
+- 모든 자바 클래스 사례들은 참조 변수에 의해서 참조됨
+>e.g.<br/>
+String str1;<br/>
+...<br/>
+str1 = "This is a Java literal string";<br/>
+-> str1은 String 클래스 사례, 즉 객체를 참조하도록 정의됨
+- 객체만 가리킬 수 있다
+- 명시적 회수 불가(delete 없음) -> garbage collector가 사용됨 -> dangling reference 생기지 않는다
+- 항상 묵시적으로 회수됨
+
 
 
 
