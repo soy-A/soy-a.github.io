@@ -126,7 +126,7 @@ myTuple[1] = 10 -> X
 ## 참조(reference) 타입
 
 - 포인터는 메모리의 주소를 참조
-- but 참조 변수는 메모리의 객체나 값을 참조
+- but 참조 변수는 **메모리의 객체나 값**을 참조
 - C++ 참조 타입 변수는 항상 묵시적으로 역참조되는 상수(constant) 포인터임
 - 따라서 어떤 변수의 주소 값으로 초기화 되어야 하고, 초기화 후에는 다른 변수를 참조하도록 설정될 수 없음
 - 한마디로, 포인터는 역참조 따로 해줘야 하지만(* 이용, 그 포인터 변수가 딴 걸 가리키고 있을 수도 있으므로) 참조 타입은 알아서 됨(표시 안해도 ok).
@@ -137,7 +137,7 @@ ref_result = 100;	// result == 100, 만약 &없었다면 0, 여기서 ref_result
 
 ### Java
 
-- Only 참조
+- **Only 참조**
 - 모든 자바 클래스 사례들은 참조 변수에 의해서 참조됨
 >e.g.<br/>
 String str1;<br/>
@@ -145,7 +145,7 @@ String str1;<br/>
 str1 = "This is a Java literal string";<br/>
 -> str1은 String 클래스 사례, 즉 객체를 참조하도록 정의됨
 - 객체만 가리킬 수 있다
-- 명시적 회수 불가(delete 없음) -> garbage collector가 사용됨 -> dangling reference 생기지 않는다
+- **명시적 회수 불가**(delete 없음) -> **garbage collector**가 사용됨 -> dangling reference 생기지 않는다
 - 항상 묵시적으로 회수됨
 
 
