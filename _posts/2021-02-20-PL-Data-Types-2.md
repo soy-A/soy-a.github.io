@@ -148,6 +148,16 @@ str1 = "This is a Java literal string";<br/>
 - **명시적 회수 불가**(delete 없음) -> **garbage collector**가 사용됨 -> dangling reference 생기지 않는다
 - 항상 묵시적으로 회수됨
 
+### 허상 포인터(dangling pointer) 문제의 해결책
+
+#### 비석 접근 방법(Tombstone)
+
+- **tombstone**: 힙-동적 변수에 대한 포인터, 추가적인 힙 셀
+- 실제 포인터 변수는 tombstone만을 가리키고 힙-동적 변수를 가리키지 않음
+- 힙-동적 변수가 회수될 때, 비석은 그대로 남으나 nil을 가리키도록 설정됨 -> 포인터가 회수된 변수를 계속 가리키는 것 방지
+- 시간, 공간적으로 비용 듦(더 많은 간접 주소지정, 비석은 회수되지 않음)
+<img width="765" alt="스크린샷 2021-03-09 오전 10 24 00" src="https://user-images.githubusercontent.com/63772786/110404082-91e9e380-80c1-11eb-8747-f99021e688d2.png">
+
 
 
 
