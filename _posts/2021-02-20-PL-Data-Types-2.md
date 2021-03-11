@@ -166,6 +166,19 @@ str1 = "This is a Java literal string";<br/>
 - 역참조된 포인터에 대한 모든 접근은 이 포인터의 키 값을 힙-동적 변수의 잠금 값과 비교함
 - 힙-동적 변수가 회수되면, 그 잠금 값은 적법하지 않은 잠금 값으로 변경됨
 
+### 힙 메모리 관리
+
+- 힙 메모리 관리는 매우 복잡한 실행 시간 프로세스일 수 있음
+>single-size segment: 모든 힙 기억공간이 동일한 크기의 단위로 할당, 회수되는 상황<br/>
+variable-size segment: 가변 크기의 세그먼트가 할당되고 회수되는 상황
+
+#### 단일 크기의 셀
+
+- 쉬운 할당 / 복잡한 회수
+- 회수 두 가지 기법: **reference counters**(eager approach: 조기 접근 방법) vs. **garbage collection**(lazy approach: 지연 접근 방법)
+
+##### Reference counters
+
 
 
 
