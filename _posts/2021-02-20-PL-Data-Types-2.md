@@ -216,8 +216,19 @@ variable-size segment: 가변 크기의 세그먼트가 할당되고 회수되�
 - 타입들에 대한 변수들의 모든 바인딩이 정적이면, 타입 검사는 거의 항상 정적으로 수행 가능
 - 타입 바인딩이 동적이면, 타입 검사는 동적이어야만 함
 - 프로그래밍 언어는 타입 오류가 항상 탐지되면 **강 타입 언어(strongly typed language)**임
+> strongly typed language: 모든 타입 detection 가능<br/>
+C, C++은 strongly typed까진 아님 -> union은 type checking 안하기 때문
 
-# 강 타입(Strong type)
+# 강 타입(Strong typing)
+
+- 장점: 타입 오류를 초래하는 변수들의 모든 잘못된 사용을 탐지할 수 있다.
+>강 타입 언어의 예<br/>
+**Ada**: 거의 강 타입임(Java도 비슷)<br/>
+**C, C++**: 타입 검사가 되지 않는 union 타입을 포함하기 때문에 강 타입 언어가 아님<br/>
+Ada > Java > C/C++
+
+- 강제 변환 규칙(coercion rules)은 문제 일으킬 수 있음
+> 오타로 인한 에러를 넘어가 버린다면 reliability를 떨어뜨린다.
 
 
 
