@@ -21,6 +21,10 @@ tags:
 - 어떤 언어에서의 레코드는 공용체(union)를 포함하는 것이 허용됨
 - 배열의 원소에 접근하는 것이 레코드 필드에 접근하는 것보다 훨씬 느림(필드 이름은 정적)
 
+<br/>
+
+---
+
 ## 레코드 필드의 참조
 
 - **완전 자격 참조**(fully qualifed reference)는 가장 큰 포괄적인 레코드부터 특정 필드에 이르기까지 모든 중간 레코드 이름들이 그 참조에 포함된다
@@ -30,12 +34,17 @@ tags:
 >- **full qualified reference**: Middle OF EMPLOYEE-NAME OF EMPLOYEE-RECORD
 >- **elliptical reference**: FIRST/ FIRST OF EMPLOYEE-NAME / FIRST OF EMPLOYEE-RECORD
 
+<br/>
+
+---
+
 ## 레코드 필드의 구현
 
 - 레코드 필드들은 인접된 메모리 위치들에 저장됨
 - 오프셋 주소: 레코드의 시작 주소에 상대적이며, 필드 접근들은 모두 이러한 오프셋을 사용하여 처리됨
 - 오프셋을 가지면 메모리가 어디에 배정되든 쉽게 찾을 수 있다
 
+<br/><br/><br/>
 
 # 공용체(union) 타입
 
@@ -49,6 +58,7 @@ tags:
 - Fortran(equivalence), C, C++(union)
 - 프로그래머는 그 사용에 있어서 타입 검사로부터 완전한 자유가 허용됨
 - 한마디로 type checking 안함
+<br/><br/>
 
 ### 판별 공용체
 
@@ -56,6 +66,7 @@ tags:
 - 각 공용체 구조가 타입 지시자를 포함함
 - type checking 함
 
+<br/><br/><br/>
 
 # 리스트(list) 타입
 
@@ -66,6 +77,7 @@ tags:
   - 어떤 데이터 값이나 객체도 포함 가능
 > e.g. myList = [3, 5, 8, 'apple']
 
+<br/><br/><br/>
 
 # 튜플(tuple) 타입
 
@@ -77,6 +89,7 @@ myTuple = (3, 5.8, 'apple')<br/>
 print(myTuple[1]) -> 5.8<br/>
 myTuple[1] = 10 -> X
 
+<br/><br/><br/>
 
 # 포인터 타입과 참조 타입
 
@@ -95,6 +108,7 @@ myTuple[1] = 10 -> X
 - **무명 변수**: 이름이 없는 변수들
 
 - 포인터는 타입 연산자(* 또는 access 등)를 사용하여 정의되지만, 배열이나 레코드와는 다르게 구조화된 타입이 아님
+<br/><br/>
 
 ### 포인터의 문제
 
@@ -114,6 +128,7 @@ myTuple[1] = 10 -> X
   1. 포인터 p1이 새롭게 생성된 힙-동적 변수를 가리키도록 설정됨
   2. p1이 나중에 새롭게 생성된 또 다른 힙-동적 변수를 가리키도록 설정됨
 - 이처럼 힙-동적 변수를 분실하는 것을 **메모리 누수(memory leakage)**라고 부르며, 이는 힙 공간을 모자라게 할 수 있음
+<br/><br/>
 
 ### C와 C++의 포인터
 
@@ -126,6 +141,10 @@ myTuple[1] = 10 -> X
 >- 역참조될 수 없다. 함수의 매개변수 타입으로서 사용됨<br/><br/>
 **void \*** 포인터는 왜 필요한가?<br/>
 >- type을 명확히 알 수 없는 경우 필요
+
+<br/>
+
+---
 
 ## 참조(reference) 타입
 
@@ -151,6 +170,7 @@ str1 = "This is a Java literal string";<br/>
 - 객체만 가리킬 수 있다
 - **명시적 회수 불가**(delete 없음) -> **garbage collector**가 사용됨 -> dangling reference 생기지 않는다
 - 항상 묵시적으로 회수됨
+<br/><br/>
 
 ### 허상 포인터(dangling pointer) 문제의 해결책
 
@@ -169,6 +189,7 @@ str1 = "This is a Java literal string";<br/>
 - 힙-동적 변수가 할당될 때, 잠금 값이 생성되어 힙-동적 변수의 잠금 셀과 new의 호출에 명세된 포인터의 키 셀에 모두 저장됨
 - 역참조된 포인터에 대한 모든 접근은 이 포인터의 키 값을 힙-동적 변수의 잠금 값과 비교함
 - 힙-동적 변수가 회수되면, 그 잠금 값은 적법하지 않은 잠금 값으로 변경됨
+<br/><br/>
 
 ### 힙 메모리 관리
 
@@ -210,6 +231,7 @@ variable-size segment: 가변 크기의 세그먼트가 할당되고 회수되�
   - 사용가능한 공간의 리스트를 유지하는 것은 또 다른 부담요소.
   - 인접된 블록들을 합병하여 충분한 크기의 블록 생성 필요
 
+<br/><br/><br/>
 
 # 타입 검사(type checking)
 
@@ -224,6 +246,7 @@ variable-size segment: 가변 크기의 세그먼트가 할당되고 회수되�
 > strongly typed language: 모든 타입 detection 가능<br/>
 C, C++은 strongly typed까진 아님 -> union은 type checking 안하기 때문
 
+<br/><br/><br/>
 
 # 강 타입(Strong typing)
 
