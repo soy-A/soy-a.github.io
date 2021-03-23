@@ -18,7 +18,8 @@ tags:
 
 ## Operator evaluation order(연산자 평가 순서)
 
-- 
+- 연산자 우선순위: 대부분 parentheses() -> unary -> \*\*(exponent) -> *, / -> +, -
+- 연산자 결합 법칙(Associativity)
 
 
 
