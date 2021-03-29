@@ -19,7 +19,11 @@ tags:
 ## Operator evaluation order(연산자 평가 순서)
 
 - 연산자 우선순위: 대부분 parentheses() -> unary -> \*\*(exponent) -> *, / -> +, -
-- 연산자 결합 법칙(Associativity)
+- 연산자 결합 법칙(Associativity): 동일 우선순위, 인접한 두 개의 연산자일 때, 연산자 결합 법칙으로 우선순위 결정
+>보통은 left to right: a+b+c -> (a+b)+c<br/>
+예외) **: right to left
+  - APL은 무조건 R->L, 모든 연산자 우선순위 같다.
+  - A+B+C+D -> 수학에서는 어떻게 바뀌어도 상관 없으나 컴퓨터에서는 순서가 바뀌면 overflow / underflow가 발생할 수 있다.  -> not associative하므로
 
 
 
