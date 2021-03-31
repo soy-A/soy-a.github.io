@@ -28,6 +28,16 @@ tags:
 - 조건식: ?은 자바 조건식에서 tennary로 사용됨
 
 ## 평가 과정(순서)
+- 변수(variables): just fetch the value
+- 상수(constants): sometimes a fetch from memory, sometimes 기계어 명령어의 일부
+- 괄호식: 모든 연산자, 피연산자 먼저 평가
+- 함수 참조
+
+## 부작용(함수적 부작용)
+: 매개 변수 중 한 개나 전역변수 변경시 발생(어떤게 먼저 평가되느냐에 따라 값 바뀜)
+> a = 10; b = a + fun(&a);  // fun이 매개변수 변경한다고 가정
+1. 함수적 부작용을 허용X<br/>
+e.g. No two-way parameters in func, no nonlocal references
 
 
 
