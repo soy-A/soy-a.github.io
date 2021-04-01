@@ -37,7 +37,22 @@ tags:
 : 매개 변수 중 한 개나 전역변수 변경시 발생(어떤게 먼저 평가되느냐에 따라 값 바뀜)
 > a = 10; b = a + fun(&a);  // fun이 매개변수 변경한다고 가정
 1. 함수적 부작용을 허용X<br/>
-e.g. No two-way parameters in func, no nonlocal references
+e.g. No two-way parameters in func, no nonlocal references<br/>
+No nonlocal references<br/>
+-> 낮은 유연성<br/>
+2. 피연산자 평가 순서 정의(fix)<br/>
+-> compiler 최적화 제한
+
+### 참조 투명성과 부작용
+- 참조 투명성: 동일한 값을 갖는 두 개 식이 프로그램 행동에 영향을 주지 않으면서 프로그램의 임의의 위치에서 서로 다른 식으로 대체가 가능한 것
+> e.g. LISP(변수 x 함수 외부: 상수)
+
+> int a, d<br/>
+float b = 3.4<br/>
+a = 3<br/>
+d = b*a<br/>
+d = ?<br/>
+: a가 확대 변환 통해 float로 변환(3.0), float의 결과를 정수형에 저장하므로 10이 저장됨(narrowing)
 
 
 
