@@ -54,6 +54,19 @@ d = b*a<br/>
 d = ?<br/>
 : a가 확대 변환 통해 float로 변환(3.0), float의 결과를 정수형에 저장하므로 10이 저장됨(narrowing)
 
+## 중복연산자(Overloaded Operators)
+- operator overloading: 연산자가 하나 이상의 목적을 위해 사용되는 것
+- common: + for int and float
+- some are potential trouble( * in C, C++)
+> e.g. x = \&y;<br/>
+1. 단항 연산자로써 변수의 주소
+2. 이항 연산자로써 비트연산 AND
+
+- 에러 검출률 낮아짐
+- readability 높아지거나 낮아지거나
+- C++은 overload 안되는 연산자 존재(:: - scope resolution op, . - struct member op)
+- Java는 연산자 오버로딩 불가
+
 
 
 <br/><br/><br/>
